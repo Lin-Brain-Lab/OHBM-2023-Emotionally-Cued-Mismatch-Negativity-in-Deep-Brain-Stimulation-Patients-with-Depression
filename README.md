@@ -1,10 +1,10 @@
-# OHBM-2023-Emotionally-Cued-Mismatch-Negativity-in-Deep-Brain-Stimulation-Patients-with-Depression
+# OHBM2023: Emotionally Cued Mismatch Negativity in Deep Brain Stimulation Patients with Depression
 Extended and ongoing data relating to the OHBM 2023 poster entitled Emotionally-Cued Mismatch Negativity in Deep Brain Stimulation Patients with Depression
 
-Note: Data here reported is from 3 female participants with TRD ages 22, 70, and 64 and was collected at two visits occuring 2- and 4-weeks post DBS implantation.
+Note: Data here reported is from 3 female participants with TRD ages 22, 70, and 64 and was collected at two visits occurring 2- and 4-weeks post DBS implantation.
 
 ## Brain Vision Analysis
-Initial preprocessing was carried out in BrainVision Analyzer and included DC detrend, bandpass and notch filters, rereferencing to TP9 mastoid electrode and occular correction.
+Initial preprocessing was carried out in BrainVision Analyzer and included DC detrend, bandpass and notch filters, rereferencing to TP9 mastoid electrode and ocular correction.
 <details>
   <summary> Full pipeline details available here
   </summary>
@@ -12,19 +12,19 @@ Initial preprocessing was carried out in BrainVision Analyzer and included DC de
   - Detrend
   - Bandpass filter (1-40hz) with a notch filter at 60hz
   - Rereferenced to mastoid electrode TP9
-  - Occular correction carried out through application of a semi-automatic ICA where the [apparent VEOG componant](/Images/pt-007_eeg-2_ic-2d.png) was removed
-  - Segmentated around each stimuli marker of interest (Neutral in sad conditions, neutral in angry condition, sad, and angry) from -500ms to 1000ms 
+  - Ocular correction carried out through application of a semi-automatic ICA where the [apparent VEOG component](/Images/pt-007_eeg-2_ic-2d.png) was removed
+  - Segmented around each stimuli marker of interest (Neutral in sad conditions, neutral in angry condition, sad, and angry) from -500ms to 1000ms 
   - Baseline correction was applied using the 500ms pre-stimulus interval for each segment
   - Semi automatic artifact rejection was carried out (least segments for any participant/condition was 44)
   - Segments were averaged
   - Each participant's MMN was calculated by comparing the emotional ERP - the neutral ERP
   - Initial grand averages were calculated for each visit, and condition (including MMNs)
-  - ERP and MMN data was exported to Matlab for futher calculations
+  - ERP and MMN data was exported to MatLab for further calculations
 
 </details>
 
 ## Matlab Analysis
-Data imported to Matlab for z-scare difference analysis (to mimic previous analysis method), and non-parametric Scheirer-Ray-Hare statistical analysis of the main effects of condition and visit as well as their interraction.
+Data imported to Matlab for z-scare difference analysis (to mimic previous analysis method), and non-parametric Scheirer-Ray-Hare statistical analysis of the main effects of condition and visit as well as their interaction.
 
 <details>
   <summary> Full details about the z-score difference analysis available here
@@ -57,8 +57,8 @@ A depiction of the MMN Grand Averages at Fz for each condition at each visit was
 ![](/Images/GA_V1V2_allCond.png)
 
 The highlighted portions of the graph were determined as timepoints of interest due to the significant negative waveforms present during the expected timepoints of the MMN (200-300ms post stimulus; light blue) and the late MMN (350-450 ms post stimulus; pink). 
-In the MMN timerange of interest, a negative going waveform was observed for both conditions and visits while during the late MMN timerange only the angry condition showed a negative going waveform while the GA for the sad condition was generally positive.
-The full baseline timerange (500ms pre-stimulus) has been included in this image.
+In the MMN time range of interest, a negative going waveform was observed for both conditions and visits while during the late MMN time range only the angry condition showed a negative going waveform while the GA for the sad condition was generally positive.
+The full baseline time range (500ms pre-stimulus) has been included in this image.
 
 
 A Scheirer-Ray-Hare test was use to assess the statistical significance of the condition and timepoint main effects as well as their interaction.
@@ -69,4 +69,4 @@ Depicted here are the angry (red) and sad (blue) means, standard deviation, and 
 
 ## Discussion
 
-Although the time course depicted above depicts visual differentiation between the conditions and perhaps time ranges (particularly during the late MMN time range), these apparent differences did not reach statistical significance. This is perhaps due to the limited sample size (3 participants).
+Although the time course depicted above shows visual differentiation between the conditions and perhaps time ranges (particularly during the late MMN time range), these apparent differences did not reach statistical significance. This is perhaps due to the limited sample size (3 participants).
